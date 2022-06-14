@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-size:auto;
+
+}
+:root{
+    --red:#ff3838;
+    --Blue:#0000FF;
+    --lightblue:#add8e6;
+    --tuftsblue:#437fc7;
+    --frenchskyblue:#6daffe;
+    --aliceblue:#edf6ff;
+    --copper:#b9732f;
+    --black:#000000;
+    --footerblue:#0000FF;
+    --green:#104210;
+
+  }
+body{
+    font-family:'open sans',sans-serif;
+    line-height: 1.5;
+    background-color: var(--lightblue);
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#666;
+    padding-left: 2%;
+  }
+  
+  header .logo i{
+    padding-right: .5rem;
+    color:var(--Blue);
+  }
+.contact-section{
+    padding-left: 2%;
+}
+.contact-bg{
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('/images2/background-01.jpg');
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+}
+.contact-bg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+
+}
+.contact-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+.contact-bg-zone{
+    height: 15vh;
+    background: var(--aliceblue);
+    text-align: left;
+    display: flex;
+    justify-content: left;
+}
+.contact-bg-zone h4{
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 3px;
+}
+.line div{
+margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background: #f7327a;
+    border-radius: 5px;
+
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: #f7327a;
+    border-radius: 50%;
+
+}
+.text{
+    font-weight: 300;
+    opacity: 0.9;
+}
+.contact-bg .text{
+    margin: 1.6rem 0;
+}
+.contact-body{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.contact-info{
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+.contact-info span{
+    display: block;
+}
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contact-info span .fas{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: #f7327a;
+}
+.contact-info div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contact-info .text{
+    padding-top: 0.4rem;
+}
+/*media queries starts here */
+@media only screen and (min-width :600px){
+    .contact-bg .text{
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: small;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media all and (min-width: 768px) {
+    .contact-bg .text{
+        width: 75%;
+        font-size: large;
+    }
+}
+@media all and (min-width: 991px) {
+    .contact-bg .text{
+        width: 100%;
+        font-size: large;
+    }
+    .contact-info{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+}
+/*media Queries ends her */
+/*Footer section's start Here*/
+.footer{
+    background:#0074D9;
+    text-align: center;
+    font-size: 3vh;
+  }
+  
+  .footer .share{
+    display: flex;
+    gap:1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer .credit{
+    padding:2.5rem 1rem;
+    color:#fff;
+    font-weight: normal;
+    font-size: 2rem;
+  }
+  
+  .footer .credit span{
+    color:var(--black);
+    font-family: bol;
+  }
+  

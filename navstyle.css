@@ -1,0 +1,88 @@
+/* styling navlist */
+#navlist {
+    background-color: #0074D9;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+     
+/* styling navlist anchor element */
+#navlist a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+}
+ 
+.navlist-right{
+    float:right;
+    align-items: center;
+}
+
+/* hover effect of navlist anchor element */
+#navlist a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Dropdown nav-links code start */
+.content .links ul{
+    position: absolute;
+    background: #171c24;
+    top: 80px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .content .links li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+  }
+  .content .links ul li a{
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    border-radius: 0px;
+  }
+  .content .links ul ul{
+    position: absolute;
+    top: 0;
+    right: calc(-100% + 8px);
+  }
+  .content .links ul li{
+    position: relative;
+  }
+  .content .links ul li:hover ul{
+    top: 0;
+  }
+  /* Drop-down menu ends here */
+     
+/* styling search bar */
+.search input[type=text]{
+    width:300px;
+    height: 42px;
+    border-radius:25px;
+    border: none;
+}
+     
+.search{
+    float:right;
+    margin:7px;
+}
+     
+.search button{
+    background-color: #0074D9;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* styling search-bar ends here*/
